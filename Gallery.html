@@ -1,0 +1,80 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<title>Gallery</title>
+	<style>
+		body {
+			margin:0;
+			background-color: cyan;
+		}
+		
+		.topnav{
+			overflow: hidden;
+			background-color: black;
+		}
+
+		.topnav a{
+			float: left;
+			color: white;
+			text-align: center;
+			padding: 14px 16px;
+			text-decoration: none;
+			font-size: 17px;
+			border-right:1px solid white;	
+		}
+		
+		.topnav a:hover{
+			background-color: cyan;
+			color: black;
+		}
+		
+		.topnav a.active{
+			background-color: green;
+			color: white;
+		}
+	
+		.footer {
+			position: fixed;
+			left: 0;
+			bottom: 0;
+			width: 100%;
+			background-color: red;
+			color: white;
+			text-align: center;
+		}
+	</style>
+	</head>
+	<body>
+		<div class="topnav">
+			<a href="Home.html">Home</a>
+			<a href="Gallery.html">Gallery</a>
+			<a href="Contacts.html">Contact</a>
+			<a href="About.html">About</a>
+			<a style="float:right" class="active" href="Feed Back.html">Feedback</a>
+		</div>
+		<center>
+			<img src="Service.png"><br>
+		</center>
+		<p style = "font-size:29px ; background-color: blue ; color: white" align="center">Shoes Gallery</p>
+		<div class="ImgSec" style="max-width: 1000px" >
+			<img id="Sliders" src="1.jpg" style="width: 100%; padding: 0px 180px; height: 300px">
+		</div>
+		
+		<div class="footer">
+			<p>Copyrights 2018 © Servis</p>
+		</div>
+	<script>
+	var images = ["1.jpg","2.jpg","3.jpg","4.jpg","5.jpg"];
+	var i = 0;
+	function slides(){
+		document.getElementById("Sliders").src = images[i];
+		if(i<(images.length-1))
+			i++;
+			else
+			i=0;
+	}
+	
+setInterval(slides, 2000)
+	</script>
+	</body>
+</html>

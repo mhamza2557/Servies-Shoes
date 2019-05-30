@@ -1,0 +1,70 @@
+﻿<DOCTYPE html>
+<html>
+	<head>
+		<title>Feed Back</title>
+		
+	<style>
+
+		body{
+			background-image: url("WP.jpg");
+			margin:0;
+		}
+
+		.topnav{
+			overflow: hidden;
+			background-color: black;
+		}
+
+		.topnav a{
+			float: left;
+			color: white;
+			text-align: center;
+			padding: 14px 16px;
+			text-decoration: none;
+			font-size: 17px;
+			border-right:1px solid white;	
+		}
+		
+		.topnav a:hover{
+			background-color: cyan;
+			color: black;
+		}
+		
+		.topnav a.active{
+			background-color: green;
+			color: white;
+		}
+	
+	</style>
+	<script>
+		function Hello(){
+			alert("Thanks for feedback");
+		}
+	</script>
+	</head>
+	<body>
+		<div class="topnav">
+			<a href="Home.html">Home</a>
+			<a href="Gallery.html">Gallery</a>
+			<a href="Contacts.html">Contact</a>
+			<a href="About.html">About</a>
+			<a style="float:right" class="active" href="Feed Back.html">Feedback</a>
+		</div>
+	
+		<center>
+		<img src="Service.png"><br><br>
+		<font size="6.5" color="cyan">Feedback Form</font><br>
+			<form>
+			<font size="5">
+			First Name:<br><input type="text" name="f_name"><br><br>
+			Last Name:<br><input type="text" name="l_name"><br><br>
+			E-Mail Address:<br><input type="text" name="email"><br><br>
+			Mobile Number:<br><input type="number" name="number"><br><br>
+			Your comments:<br><textarea name="comments" rows="15" cols="50"></textarea><br><br>
+			<button class="button" onclick = "Hello()">Submit</button>
+			</font>
+			</form>
+		</center>
+			
+	</body>
+</html>
